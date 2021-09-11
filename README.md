@@ -39,13 +39,12 @@ Responsive
 https://www.made.com/nl/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
-<img src="images/made-website-page1.jpg" width="375px" alt="MADE website pagina 1">
+MADE website homepagina
+<img src="images/made-website-page1.jpg" alt="MADE website homepagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/made-website-page2.jpg" width="375px" alt="MADE website pagina 2">
+MADE website detailpagina
+<img src="images/made-website-page2.jpg" alt="MADE website detailpagina">
  
 </details>
 
