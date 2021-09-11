@@ -40,11 +40,11 @@ https://www.made.com/nl/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 MADE website homepagina
-<img src="images/made-website-page1.jpg" width="375px" alt="MADE website homepagina">
+<img src="images/made-website-page-1.jpg" width="375px" alt="MADE website homepagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 MADE website detailpagina
-<img src="images/made-website-page2.jpg" width="375px" alt="MADE website detailpagina">
+<img src="images/made-website-page-2.jpg" width="375px" alt="MADE website detailpagina">
  
 </details>
 
