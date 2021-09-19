@@ -1,5 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+
 /* CSS Document */
 *, *::after, *::before {
-  box-sizing:border-box;  
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box; 
 }
 
+p, li, a, button {
+  font-family: "Maven Pro";
+}
+
+/* Styles voor de header in alle HTML files */
+
+
+
+/* Header - "Stijladvies nodig" */
+header section:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #545d63;
+  color: #fff;
+  font-size: 14px;
+  padding: 1em 0;
+}
+
+header section:nth-of-type(1) a {
+  color: #fff;
+  
+}
+
+/* Header - "Logo en icons" */
+header section:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1em;
+}
+
+header section:nth-of-type(2) img {
+  max-width: 6em;
+}
+
+header section:nth-of-type(2) nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+
+/* Header - "Formulier" */
