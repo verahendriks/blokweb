@@ -84,7 +84,7 @@ Hier moesten we een agenda samenstellen met het groepje voor het voortgangsgespr
 
 
 ### Verslag van meeting
-De uitkomsten van het voortgangsgesprek heb ik niet vast kunnen leggen, omdat ik niet heb deelgenomen aan het voortgangsgeesprek.
+De uitkomsten van het voortgangsgesprek heb ik niet vast kunnen leggen, omdat ik niet heb deelgenomen aan het voortgangsgesprek.
 
 </details>
 
