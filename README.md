@@ -56,10 +56,10 @@ https://www.made.com/nl/
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/readme/homepage" width="375px" alt="breakdown van de hele pagina">
+<img src="images/readme/homepage" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/readme/menu" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/readme/menu" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter): 
 
