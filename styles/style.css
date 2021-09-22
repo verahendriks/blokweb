@@ -4,8 +4,8 @@
 
 
 *, *::after, *::before {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   box-sizing:border-box; 
 }
 
@@ -22,8 +22,12 @@ h1 {
 
 /* Styles voor de header in alle HTML files */
 
-
 /* Header - "Stijladvies nodig" */
+
+body {
+  margin: 0;
+}
+
 header section:nth-of-type(1) {
   display: flex;
   justify-content: center;
@@ -31,7 +35,6 @@ header section:nth-of-type(1) {
   background-color: #545d63;
   color: #fff;
   font-size: 14px;
-  padding: 1em 0;
 }
 
 header section:nth-of-type(1) a {
@@ -86,6 +89,29 @@ header form input {
 
 
 /* Main - "Afbeelding homepagina" */
+
+main .image-homepage a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+main .image-homepage div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  text-align: right;
+  padding: 2em;
+}
+
+main .image-homepage div h1 {
+  font-size: 2em;
+  line-height: 1.25em;
+}
+
 main .image-homepage img {
   max-width: 100%;
 }
@@ -94,17 +120,15 @@ main .image-homepage img {
 /* Main - "Carousel homepagina" */
 main .carousel-homepage h1 {
   margin-top: 2em;
-  padding-bottom: 1em;
   margin-left: 1em;
 }
 
 main .carousel-homepage ul {
   display:flex;
   overflow-x:auto;
-  margin-left: 1em;
-  margin-right: 1em;
   gap: 0.5em;
   width: 100%;
+  padding: 1em;
   list-style-type: none;
 }
 
@@ -130,7 +154,37 @@ main .carousel-homepage ul p:nth-of-type(2) {
 }
 
 main .carousel-homepage ul p:nth-of-type(3) {
-  margin-top: 2em;
+  margin-bottom: 2em;
   font-size: 13px;
   font-weight: 400;
+}
+
+/* ******************************** */
+/* Main - "Spiegeltrucs homepagina" */
+/* ******************************** */
+
+main .spiegeltrucs-homepage h1 {
+  margin-top: 1em;
+  padding-bottom: 1em;
+  margin-left: 1em;
+}
+
+main .spiegeltrucs-homepage img {
+  margin-top: 2em;
+  max-width: 100%;
+}
+
+main .spiegeltrucs-homepage p {
+  font-size: 16px;
+  font-weight: 0;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+main .spiegeltrucs-homepage a {
+  display: flex;
+  font-size: 13px;
+  color: black;
+  margin-left: 1em;
+  margin-top: 1em;
 }

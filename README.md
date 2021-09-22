@@ -98,35 +98,29 @@ De uitkomsten van het voortgangsgesprek heb ik niet vast kunnen leggen, omdat ik
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
+Dinsdag 21 september:
 Het begin vond ik erg lastig en ik wist niet echt waar ik moest beginnen. Eenmaal begonnen ging dit een stuk beter en werk ik de homepagina per deel uit om zo niet de weg kwijt te raken. Wel loop ik vast op een paar dingen, dit zijn dingen zoals: Hoe plaats ik het logo in het midden? Er zit nu een witte lijn rechts als ik naar links beweeg, hoe haal ik deze weg? Hoe plaats ik verschillende soorten teksten over de afbeelding en hoe hou ik de afbeelding dan ook een link? Hoe krijg ik de prijzen onder de afbeeldingen van de producten allemaal op dezelfde plaats? Ik hoop deze vragen beantwoord te krijgen in het voortgangsgesprek, door de student-assistenten of door te zoeken op google. 
+
+Woensdag 22 september:
+Ik typ nog even een stukje tekst wat nu de stand van zaken is. In het vorige stukje tekst liep ik vast met dat ik een witte lijn aan de rechterkant van de pagina had als ik naar links bewoog, dit is nu opgelost. Verder liep ik vast met hoe ik verschillende soorten teksten over de afbeelding kon plaatsen en hoe hou ik de afbeelding dan ook nog een link, dit heb ik gevraagd in de werkgroep vandaag en ben ik aardig goed mee op weg. De andere twee vragen heb ik nog niet opgelost, dit waren de vragen hoe ik het logo in het midden moet plaatsen en hoe ik de prijzen onder de afbeeldingen van de producten allemaal op dezelfde plaats krijg. De student-assistent zei dat ik dit waarschijnlijk kan uitvinden als ik terugkijk naar een van de opdrachten die we hebben gehad, dit is de opdracht over grid en media queries. Bij deze werkgroep ben ik ook helaas niet geweest, dus dit is de reden dat ik deze opdracht niet heb gemaakt. Vandaar dat ik hier beneden in de agenda dit ook nog zou willen bespreken in het voortgangsgeesprek.
+
 
 ### Agenda voor meeting
 
-Vera: 
-
+Vera
 Ik wil graag bespreken: 
-Hoe plaats ik verschillende soorten teksten over de afbeelding en hoe hou ik de afbeelding dan ook een link?
-
-Als er nog tijd is:
-Hoe plaats ik het logo in het midden? & Hoe krijg ik de prijzen onder de afbeeldingen van de producten allemaal op dezelfde plaats?
+Hoe je iets responsive maakt (bijvoorbeeld een afbeelding) en meer uitleg over de grid en media queries.
 
 
-Sidney:
-
+Sidney
 Ik wil graag bespreken: 
-...
-
-Als er nog tijd is:
-...
+Meer uitleg over een sideways hamburger menu en JavaScript transitions van de homepage.
 
 
-Martha:
-
+Martha
 Ik wil graag bespreken: 
-...
+Hoe je iets responsive maakt, een hamburger menu maakt en tekst op afbeeldingen plaatst.
 
-Als er nog tijd is:
-...
 
 
 ### Verslag van meeting
