@@ -108,16 +108,19 @@ Ik typ nog even een stukje tekst wat nu de stand van zaken is. In het vorige stu
 ### Agenda voor meeting
 
 Vera
+
 Ik wil graag bespreken: 
 Hoe je iets responsive maakt (bijvoorbeeld een afbeelding) en meer uitleg over de grid en media queries.
 
 
 Sidney
+
 Ik wil graag bespreken: 
 Meer uitleg over een sideways hamburger menu en JavaScript transitions van de homepage.
 
 
 Martha
+
 Ik wil graag bespreken: 
 Hoe je iets responsive maakt, een hamburger menu maakt en tekst op afbeeldingen plaatst.
 
