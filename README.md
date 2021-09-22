@@ -108,9 +108,8 @@ De andere twee vragen heb ik nog niet opgelost, dit waren de vragen hoe ik het l
 
 Verder heb ik nog als tips van de student-assistent gekregen dat ik beter kan beginnen met het ordenen van mijn HTML door alle HTML-elementen voor de content al te plaatsen, geen classes te gebruiken en mijn CSS ordenen door blokjes boven de sections te plaatsen. Plus dus nog terugkijken naar de opdracht over grid en media queries en deze nog te gaan maken.
 
-<img src="images/readme/tekst-over-afbeelding.jpg" width="300px" alt="tekst over afbeelding">
-<img src="images/readme/tekst-over-afbeelding-html.jpg" width="300px" alt="html tekst over afbeelding">
-<img src="images/readme/tekst-over-afbeelding-css.jpg" width="300px" alt="css tekst over afbeelding">
+<img src="images/readme/tekst-over-afbeelding.jpg" width="375px" alt="tekst over afbeelding">
+<img src="images/readme/tekst-over-afbeelding-code.jpg" width="375px" alt="html en css tekst over afbeelding">
 
 
 ### Agenda voor meeting
