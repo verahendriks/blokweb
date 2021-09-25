@@ -134,7 +134,6 @@ Hoe je iets responsive maakt, een hamburger menu maakt en tekst op afbeeldingen 
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
 - Mijn code ziet er tot nu toe prima uit. 
 - Ik kan nu het best beginnen met het ordenen van mijn HTML en CSS.
