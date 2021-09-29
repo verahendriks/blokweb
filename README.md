@@ -153,28 +153,24 @@ Hoe je iets responsive maakt, een hamburger menu maakt en tekst op afbeeldingen 
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
 Hier korte omschrijving (met indien nodig een afbeelding)
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Screen reader
+De screen reader leest het redelijk goed voor alleen kan ik bij sommige afbeeldingen nog een alt toevoegen, zodat het duidelijk is waar je bevindt.
 
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Brillen 
+Met de brillen merkte ik dat het fijner is om meer contrast te hebben en grotere tekst. Er is al genoeg contrast op mijn website maar op sommige tekst kan wel iets groter.
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Elektrische stimulator
+Met de elektrische stimulator merkte ik dat het fijn is dat de knoppen/linkjes wat groter zijn dan alleen het formaat van de knoppen/linkjes. Dit doe ik al bij de linkjes die ook afbeeldingen zijn maar zou ik nog beter kunnen doen bij de knoppen en het logo.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+
+#### Muis en toetsenbord
+Tijdens de test met muis en toetsenbord heb ik een paar dingen gevonden. Op dit moment heb ik het menu nog niet, in het menu wordt de focus state onzichtbaar en daar zou ik op kunnen letten. Op dit moment heb ik nog geen hover states maar hij weet wel wanneer ik op iets kan klikken. Ik kan ook nog letten op de active state voor mensen die een trage computer hebben, zodat ze weten dat de website aan het laden is.
 
 </details>
 
