@@ -19,6 +19,14 @@ body {
 }
 
 
+:root {
+  --gray: #545d63;
+  --white: #ffffff; 
+  --light-gray: #f5f6f4;
+  --black: #000000;
+
+}
+
 
 
 
@@ -31,13 +39,13 @@ header section:first-of-type {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #545d63;
-  color: #fff;
+  background-color: var(--gray);
+  color: var(--white);
   font-size: 14px;
 }
 
 header section:first-of-type a {
-  color: #fff;
+  color: var(--white);
 }
 
 
@@ -49,8 +57,12 @@ header section:nth-of-type(2) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--white);
   padding: 1em;
+}
+
+header section:last-of-type nav:first-child {
+  width: 48px;
 }
 
 header section:last-of-type img {
@@ -60,6 +72,8 @@ header section:last-of-type img {
 header section:last-of-type nav ul {
   display: flex;
   list-style-type: none;
+  padding-left: 0;
+  width: 48px;
 }
 
 
@@ -73,7 +87,7 @@ header form {
   align-items: center;
   min-width: none;
   height: 2.5em;
-  background-color:#f5f6f4;
+  background-color: var(--light-gray);
   border-radius: 0.5em;
   padding: 0.8em;
   margin: 0 1em 1em 1em;
@@ -86,11 +100,41 @@ header form input {
   outline: none;
   font-size: 14px;
   padding-left: 1em;
-  background-color: #f5f6f4;
+  background-color: var(--light-gray);
+}
+
+
+/* ******************************** */
+/* Header - Mobiel menu             */
+/* ******************************** */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100vh;
+  background-color: var(--white);
+  z-index: 9999;
+  transition: 0.4s;
+  transform: translateX(0);
+}
+
+.mobile-menu.hidden {
+  transform: translateX(-100vw)
 }
 
 
 
+
+
+/* ******************************** */
+/* Main - Alles in de main          */
+/* ******************************** */
+
+.white-space {
+  padding: 0 1rem;
+}
 
 
 
@@ -100,8 +144,9 @@ header form input {
 
 main section:first-of-type a {
   text-decoration: none;
-  color: white;
+  color: var(--white);
   position: relative;
+  display: block;
 }
 
 main section:first-of-type div {
@@ -135,7 +180,22 @@ main section:first-of-type div p:last-of-type {
 }
 
 main section:first-of-type img {
-  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+main section:first-of-type img:last-child {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main section:first-of-type img:first-child {
+    display: none;
+  }
+
+  main section:first-of-type img:last-child {
+    display: block;
+  }
 }
 
 
@@ -163,7 +223,7 @@ main section:nth-of-type(2) ul img {
 
 main section:nth-of-type(2) a {
   text-decoration: none;
-  color: black;
+  color: var(--black);
 }
 
 main section:nth-of-type(2) ul li div {
@@ -171,7 +231,7 @@ main section:nth-of-type(2) ul li div {
   grid-template-rows: 15% 55px auto;
 }
 
-main section:nth-of-type(2) p:nth-of-type(1) {
+main section:nth-of-type(2) p {
   font-size: 13px;
   font-weight: 500;
 }
@@ -181,19 +241,10 @@ main section:nth-of-type(2) p:nth-of-type(2) {
   font-weight: 300;
 }
 
-main section:nth-of-type(2) p:nth-of-type(3) {
-  font-size: 13px;
-  font-weight: 500;
-}
-
 
 /* ******************************** */
 /* Main - Spiegeltrucs              */
 /* ******************************** */
-
-main section:nth-of-type(3) h1 {
-  margin-left: 1em;
-}
 
 main section:nth-of-type(3) img {
   max-width: 100%;
@@ -203,16 +254,13 @@ main section:nth-of-type(3) p {
   line-height: 20px;
   font-size: 15px;
   font-weight: 0;
-  margin-left: 1em;
-  margin-right: 1em;
   font-weight: 100;
 }
 
 main section:nth-of-type(3) a {
   display: flex;
   font-size: 14px;
-  color: black;
-  margin-left: 1em;
+  color: var(--black);
   margin-top: 1em;
 }
 
@@ -223,8 +271,6 @@ main section:nth-of-type(3) a {
 
 main section:nth-of-type(4) h1 {
   margin-top: 3em;
-  margin-left: 1em;
-  
 }
 
 main section:nth-of-type(4) ul {
@@ -240,8 +286,8 @@ main section:nth-of-type(4) ul img {
   width: 11em;
 }
 
-main section:nth-of-type(4) a {
-  color: black;
+main section:nth-of-type(4) > a {
+  color: var(--black);
 }
 
 main section:nth-of-type(4) ul li div {
@@ -250,7 +296,6 @@ main section:nth-of-type(4) ul li div {
 }
 
 main section:nth-of-type(4) p {
-  margin-left: 1em;
   line-height: 20px;
   font-size: 15px;
   font-weight: 100;
@@ -261,4 +306,3 @@ main section:nth-of-type(4) p {
 /* ******************************** */
 /* Main - Handige tips              */
 /* ******************************** */
-

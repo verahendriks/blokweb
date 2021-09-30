@@ -188,13 +188,23 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 
 
 ### Agenda voor meeting
-samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Vera
+
+Ik wil graag bespreken: 
+Ik vraag me af in hoeverre het responsive moet zijn (over het menu).
+
+
+Sidney
+
+Ik wil graag bespreken: 
+Ik heb op moment geen vragen.
+
+
+Martha
+
+Ik wil graag bespreken: 
+Hoe je iets responsive maakt. 
 
 
 ### Verslag van meeting
