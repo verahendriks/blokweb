@@ -153,12 +153,11 @@ Hoe je iets responsive maakt, een hamburger menu maakt en tekst op afbeeldingen 
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
 #### Screen reader
-De screen reader leest het redelijk goed voor alleen kan ik bij sommige afbeeldingen nog een alt toevoegen, zodat het duidelijk is waar je bevindt.
+De screen reader leest het redelijk goed voor alleen kan ik bij sommige afbeeldingen nog een alt toevoegen, zodat het duidelijk is wat is er te zien is op de afbeelding.
+
+<img src="images/readme/code-css-alt.jpg" width="375px" alt="tekst over afbeelding">
+<img src="images/readme/code-css-alt-homepagina.jpg" width="375px" alt="html en css tekst over afbeelding">
 
 
 #### Brillen 
