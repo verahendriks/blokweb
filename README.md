@@ -225,14 +225,14 @@ Hoe je iets responsive maakt.
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik vond het vooral lastig om te beginnen, ik wist niet zo goed waar ik moest beginnen en dit was erg demotiverend. Toen ik eenmaal was begonnen ging het redelijk goed en had ik wel de smaak te pakken. Toch vond ik het responsive gedeelte het moeilijkst, dit komt mede doordat ik precies deze werkgroep ook had gemist, maar na een voortgangsgesprek met de docent snapte ik dit ook een stuk meer en ging het ook een stuk makkelijker.
 
 ### Screenshot(s)
 
 Screenshot(s) van je eindresultaat (links van Made, rechts van mij)
 
 <img src="images/readme/homepagina-made.jpg" width="300px" alt="homepagina van made">
-<img src="images/readme/homepagina-made-vera.jpg" width="350px" alt="homepagina van made door mij">
+<img src="images/readme/homepagina-made-vera.jpg" width="315px" alt="homepagina van made door mij">
 
 </details>
 
@@ -246,7 +246,23 @@ Screenshot(s) van je eindresultaat (links van Made, rechts van mij)
 <summary>continu bijhouden terwijl je werkt</summary>
 
 1. Veel hulp van student-assistenten, docent en andere studenten.
-2. 
-3. ...
+2. DLO - Flexbox - Oefening 1 
+3. DLO - Grid en Media Queries - Oefening 3
+4. Vooral de opdrachten tijdens de lessen
+5. https://flexboxfroggy.com/#nl
+6. https://cssgridgarden.com/#nl
+7. https://css-tricks.com/snippets/css/complete-guide-grid/
+8. https://www.w3schools.com/css/css3_variables.asp
+9. https://www.w3schools.com/css/css3_mediaqueries.asp
+10. https://www.w3schools.com/css/css3_transitions.asp
+11. https://www.w3schools.com/css/css_z-index.asp
+12. https://www.w3schools.com/css/css_positioning.asp
+
+
+
+
+
+
+
 
 </details>
