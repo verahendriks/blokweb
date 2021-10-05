@@ -229,7 +229,10 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
+Screenshot(s) van je eindresultaat (links van Made, rechts van mij)
+
+<img src="images/readme/homepagina-made.jpg" width="300px" alt="homepagina van made">
+<img src="images/readme/homepagina-made-vera.jpg" width="300px" alt="homepagina van made door mij">
 
 </details>
 
