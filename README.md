@@ -156,8 +156,8 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 #### Screen reader
 De screen reader leest het redelijk goed voor alleen kan ik bij sommige afbeeldingen nog een alt toevoegen, zodat het duidelijk is wat is er te zien is op de afbeelding.
 
-<img src="images/readme/code-css-alt.jpg" width="800px" alt="tekst over afbeelding">
-<img src="images/readme/code-css-alt-homepagina.jpg" width="800px" alt="html en css tekst over afbeelding">
+<img src="images/readme/code-css-alt.jpg" width="800px" alt="code css alt">
+<img src="images/readme/code-css-alt-homepagina.jpg" width="800px" alt="code css alt homepagina">
 
 
 #### Brillen 
@@ -183,8 +183,7 @@ Tijdens de test met muis en toetsenbord heb ik een paar dingen gevonden. Op dit 
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Op dit moment ben ik bezig met het afmaken van mijn eerste pagina (homepagina) en deze responsive te maken. Ik heb moeite met het menu in de header en footer, ik weet niet in hoeverre deze responsive moeten zijn. Op de echte website zijn de menu's erg groot en ik weet niet wat ik hiervan moet meenemen. Voor de rest moet ik gewoon mijn eerste pagina (home) afmaken en beginnen met mijn tweede pagina.
 
 ### Agenda voor meeting
 
@@ -207,12 +206,12 @@ Hoe je iets responsive maakt.
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Ik weet nu aan de hand van de uitleg hoe ik het menu van de header en footer moet uitwerken (zie hier beneden resultaat).
+- Ook weet ik nu beter hoe ik mijn homepagina (afbeeldingen met stukjes tekst) responsive maak.
+
+<img src="images/readme/menu-responsive-1.jpg" width="600px" alt="menu responsive 1">
+<img src="images/readme/menu-responsive-2.jpg" width="200px" alt="menu responsive 2">
 
 </details>
 
