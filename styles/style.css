@@ -1,34 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+/* ******************************** */
+/* Importeren van fonts             */
+/* ******************************** */
 
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* ******************************** */
+/* Basis voor het hele document     */
+/* ******************************** */
 
 *, *::after, *::before {
   box-sizing:border-box; 
-}
-
-p, li, a, button, h1 {
-  font-family: "Maven Pro";
-}
-
-h1 {
-  font-size: 20px;
-  font-weight: 500;
 }
 
 body {
   margin: 0;
 }
 
+body, p, a, ul, li {
+  text-decoration: none;
+}
 
-:root {
-  --gray: #545d63;
-  --white: #ffffff; 
-  --light-gray: #f5f6f4;
-  --black: #000000;
-
+li {
+  list-style-type: none;
 }
 
 
+/* ******************************** */
+/* Custom properties                */
+/* ******************************** */
 
+:root {
+  /* HeaderColors */
+  --header-background-color-stijladvies: #545d63;
+  --header-background-color-form: #f5f6f4;
+
+  /* MobileMenuColors */
+  --mobile-menu-background-color: #ffffff;
+
+  /* TextColors */
+  --text-color-white: #ffffff;
+  --text-color-black: #000000;
+
+  /* MainColors */
+  --main-shop-instagram-color: #9b9b9b;
+  --main-background-color-inschrijven: #efeee5;
+  --main-background-color-button: #000000;
+
+  /* FooterColors */
+  --footer-border-color: #dadada;
+  --footer-background-color: #f8f8f8;
+}
+
+
+/* ******************************** */
+/* Algemene styling                 */
+/* ******************************** */
+
+body, p, a, ul, li {
+  font-family: "Maven Pro", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: "Maven Pro", Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+p {
+  font-size: 0.9em;
+  line-height: 1.6em;
+}
+
+
+/* ******************************** */
+/* Algemene styling - Media queries */
+/* ******************************** */
+
+@media (min-width:118em) {
+  header section:nth-of-type(2) {
+    margin-right: 10em;
+    margin-left: 10em;
+  }
+
+  header form {
+    margin-right: 10em;
+    margin-left: 10em;
+    margin-bottom: 1em;
+  }
+
+  main {
+    margin-right: 10em;
+    margin-left: 10em;
+  }
+
+  footer {
+    padding-right: 10em;
+    padding-left: 10em;
+  }
+
+  #handige-tips main {
+    margin-right: 20em;
+    margin-left: 20em;
+  }
+}
 
 
 /* ******************************** */
@@ -36,44 +112,153 @@ body {
 /* ******************************** */
 
 header section:first-of-type {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--gray);
-  color: var(--white);
-  font-size: 14px;
+  text-align: center;
+  padding: 0.5em 0 0.5em 0;
+
+  background-color: var(--header-background-color-stijladvies);
+  color: var(--text-color-white);
 }
 
 header section:first-of-type a {
-  color: var(--white);
+  color: var(--text-color-white);
+  text-decoration: underline;
+}
+
+header section:first-of-type p {
+  margin: 0;
+}
+
+header section:nth-of-type(2) {
+  padding:1em;
+  background-color:white;
+  display:grid;
+  grid-template-columns:min-content 1fr 1fr min-content;  
+  align-items:center;
+  z-index: 150;
+  position:sticky;
+  top:0;
+}
+
+header section:nth-of-type(2) a {
+  color: var(--text-color-black);
+  text-decoration:none;
 }
 
 
 /* ******************************** */
-/* Header - Logo en icons           */
+/* Header - Logo                    */
 /* ******************************** */
 
 header section:nth-of-type(2) {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--white);
-  padding: 1em;
+  display:grid;
+  grid-template-columns:min-content 1fr 1fr min-content;
+  grid-gap:.25em;
+  align-items:center;
 }
 
-header section:last-of-type nav:first-child {
-  width: 48px;
+header section:nth-of-type(2) > a:first-of-type {
+  line-height:1;
+  font-weight:bold;
+  justify-self:center;
 }
 
-header section:last-of-type img {
-  max-width: 6em;
+header section:nth-of-type(2) > a:first-of-type img {
+  height:1.5em;
 }
 
-header section:last-of-type nav ul {
-  display: flex;
-  list-style-type: none;
-  padding-left: 0;
-  width: 48px;
+
+/* ******************************** */
+/* Header - Heart and bag icon      */
+/* ******************************** */
+
+header section:nth-of-type(2) > div:last-of-type {
+  width:5em;
+  height:2.5em;
+  background-color:var(--button-background-color);
+  border-radius:.25em;
+  line-height:2.5em;
+  text-align:center;
+  padding: 0.4em 0;
+}
+
+header section:nth-of-type(2) > div:last-of-type a {
+  padding: 0 0.1em 0 0.1em;
+}
+
+header section:nth-of-type(2) > div:last-of-type::before {
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  width:1em;
+  height:1em;
+  transform:scale(.75);
+}
+
+
+/* ******************************** */
+/* Header - Navigatie               */
+/* ******************************** */
+nav {
+  order:-1;  
+}
+
+nav button {
+  width:5em;
+  height:2.5em;
+  appearance:none;
+  background-color:var(--button-background-color);
+  border:none;
+  border-radius:.25em;
+  position:relative;
+  z-index:100;
+}
+
+nav button::before {
+  content:"\2630 ";
+  display:inline-flex;
+  font-size: 2.5em;
+  justify-content:center;
+  align-items:center;
+  width:1em;
+  height:1em;
+  transform:scale(.75);
+}
+
+nav.toonMenu  button::before {
+  content:"\2573";
+}
+
+nav ul { 
+  margin:0; 
+  padding:8em 0;
+  background:white;
+  list-style:none;
+  position:fixed;
+  left:0; right:0; top:0; bottom:0;
+  transform:translatex(-100%);
+  transition:.5s;
+  z-index:50;
+}
+
+nav.toonMenu ul {
+  transform:translatex(0);
+}
+
+nav a {
+  display:flex;
+  align-items:center;
+  gap:.25em;
+  padding:1em 1.9em;
+  border-bottom:solid 0.1em var(--footer-border-color);
+}
+
+nav a img {
+  width:auto;
+  height:2em;
+}
+
+nav a.active {
+  font-weight:bold;
 }
 
 
@@ -87,10 +272,10 @@ header form {
   align-items: center;
   min-width: none;
   height: 2.5em;
-  background-color: var(--light-gray);
+  background-color: var(--header-background-color-form);
   border-radius: 0.5em;
-  padding: 0.8em;
-  margin: 0 1em 1em 1em;
+  padding: 1em;
+  margin: 0.2em 0.6em;
 }
 
 header form input {
@@ -98,58 +283,73 @@ header form input {
   height: 2.5em;
   border:none;
   outline: none;
-  font-size: 14px;
+  font-size: 0.9em;
   padding-left: 1em;
-  background-color: var(--light-gray);
+  background-color: var(--header-background-color-form);
 }
 
 
 /* ******************************** */
-/* Header - Mobiel menu             */
+/* Header - Media queries           */
 /* ******************************** */
 
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  min-height: 100vh;
-  background-color: var(--white);
-  z-index: 9999;
-  transition: 0.4s;
-  transform: translateX(0);
+@media (min-width:70em) {
+  nav {
+    /* jouw code hier */
+    justify-self:center;
+    order:0;
+  }
+  
+  nav button {
+    /* jouw code hier */
+    display:none;
+  }
+  
+  nav ul {
+    /* jouw code hier */
+    position:static;
+    transform:none;
+    
+    padding:0;
+    background:none;
+    
+    /* new */
+    display:flex;
+  }
+  
+  nav a {
+    /* jouw code hier */
+    border:none;
+  }
 }
 
-.mobile-menu.hidden {
-  transform: translateX(-100vw)
+@media (max-width:90em) {
+  header section:nth-of-type(2) {
+    display:grid;
+    grid-template-columns:min-content 1fr min-content;
+    grid-template-rows: 1fr 1fr;
+    grid-gap:.25em;
+    align-items:center;
+  }
+  header section:nth-of-type(2) form {
+    grid-row-start: 2;
+    grid-column: 1 / span 3 ;
+
+  }
 }
 
 
-
-
-
 /* ******************************** */
-/* Main - Alles in de main          */
+/* Main - 1 - Afbeelding levering   */
 /* ******************************** */
 
-.white-space {
-  padding: 0 1rem;
-}
-
-
-
-/* ******************************** */
-/* Main - Afbeelding levering       */
-/* ******************************** */
-
-main section:first-of-type a {
-  text-decoration: none;
-  color: var(--white);
+ main .home-afbeelding a {
+  color: var(--text-color-white);
   position: relative;
   display: block;
 }
 
-main section:first-of-type div {
+ main .home-afbeelding div {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -158,151 +358,800 @@ main section:first-of-type div {
   z-index: 100;
   text-align: right;
   padding: 2em;
-  padding-left: 3em;
+  padding-left: 2em;
 }
 
-main section:first-of-type div h1 {
+ main .home-afbeelding div h1 {
   font-size: 2em;
-  line-height: 1.25em;
+  line-height: 1.5em;
+  word-spacing: 30em;
 }
 
-main section:first-of-type div p:first-of-type {
+ main .home-afbeelding div p:first-of-type {
   font-size: 1.25em;
   line-height: 1.5em;
   font-weight: 100;
 }
 
-main section:first-of-type div p:last-of-type {
-  font-size: 1.25em;
-  line-height: 1.5em;
+ main .home-afbeelding div p:last-of-type {
+  font-size: 1.4em;
+  line-height: 1.7em;
   font-weight: 500;
   text-decoration: underline;
 }
 
-main section:first-of-type img {
+ main .home-afbeelding img {
   width: 100%;
   object-fit: cover;
 }
 
-main section:first-of-type img:last-child {
+ main .home-afbeelding img:last-child {
   display: none;
 }
 
-@media screen and (min-width: 1024px) {
-  main section:first-of-type img:first-child {
+
+/* ******************************** */
+/* Main - 1 - Media queries         */
+/* ******************************** */
+
+@media (min-width: 64em) {
+   main .home-afbeelding img:first-child {
     display: none;
   }
 
-  main section:first-of-type img:last-child {
+   main .home-afbeelding img:last-child {
     display: block;
   }
 }
 
+@media (min-width:45em) {
+   main .home-afbeelding div {
+    padding: 2em;
+    padding-right: 3em;
+  }
 
-/* ******************************** */
-/* Main - Carousel                  */
-/* ******************************** */
+   main .home-afbeelding div h1 {
+    font-size: 2.75em;
+    line-height: 1.5em;
+    word-spacing: 50em;
+  }
 
-main section:nth-of-type(2) h1 {
-  margin-top: 2em;
-  margin-left: 1em;
+   main .home-afbeelding div p:first-of-type {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 100;
+  }
+
+   main .home-afbeelding div p:last-of-type {
+    font-size: 1.5em;
+    line-height: 1.7em;
+    font-weight: 500;
+    text-decoration: underline;
+  }
 }
 
-main section:nth-of-type(2) ul {
+
+/* ******************************** */
+/* Main - 2 - Carousel              */
+/* ******************************** */
+
+ main .carousel {
+  padding: 2em 1em 0em 1em;
+}
+
+ main .carousel ul {
   display:flex;
   overflow-x:auto;
   gap: 0.5em;
   width: 100%;
-  padding: 1em;
-  list-style-type: none;
+  padding: 0;
+  padding-top: 1em;
 }
 
-main section:nth-of-type(2) ul img {
-  width: 11em;
+ main .carousel ul img {
+  width: 14em;
 }
 
-main section:nth-of-type(2) a {
-  text-decoration: none;
-  color: var(--black);
+ main .carousel a {
+  color: var(--text-color-black);
 }
 
-main section:nth-of-type(2) ul li div {
+ main .carousel ul li div {
   display: grid;
-  grid-template-rows: 15% 55px auto;
+  grid-template-rows: 15% 4.5em auto;
 }
 
-main section:nth-of-type(2) p {
-  font-size: 13px;
+ main .carousel p {
   font-weight: 500;
+  color: #000000;
 }
 
-main section:nth-of-type(2) p:nth-of-type(2) {
-  font-size: 12px;
+ main .carousel p:nth-of-type(2) {
+  font-size: 0.9em;
   font-weight: 300;
 }
 
 
 /* ******************************** */
-/* Main - Spiegeltrucs              */
+/* Main - 2 - Media queries         */
 /* ******************************** */
 
-main section:nth-of-type(3) img {
-  max-width: 100%;
+@media (min-width:60em) {
+   main .carousel ul {
+    gap: 0.7em;
+  }
+
+   main .carousel ul img {
+    width: 16em;
+    gap: 0.8em;
+  }
 }
 
-main section:nth-of-type(3) p {
-  line-height: 20px;
-  font-size: 15px;
-  font-weight: 0;
-  font-weight: 100;
+@media (min-width:70em) {
+   main .carousel ul {
+    gap: 0.9em;
+  }
+   main .carousel ul img {
+    width: 20em;
+  }
 }
 
-main section:nth-of-type(3) a {
+@media (min-width:80em) {
+   main .carousel ul {
+    gap: 1.1em;
+  }
+   main .carousel ul img {
+    width: 22em;
+  }
+}
+
+@media (min-width:90em) {
+   main .carousel ul {
+    gap: 1.3em;
+  }
+   main .carousel ul img {
+    width: 24em;
+  }
+}
+
+
+/* ******************************** */
+/* Main - 3 - Spiegeltrucs          */
+/* ******************************** */
+
+ main .home-spiegeltrucs {
+  padding: 2em 1em 2em 1em;
   display: flex;
+  flex-direction: column;
+}
+
+ main .home-spiegeltrucs h1 {
+  order: 0;
+}
+
+ main .home-spiegeltrucs img {
+  max-width: 100%;
+  order: -1;
+}
+
+ main .home-spiegeltrucs p {
+  font-weight: 100;
+  order: 1;
+}
+
+ main .home-spiegeltrucs a {
+  display: block;
   font-size: 14px;
-  color: var(--black);
-  margin-top: 1em;
+  color: var(--text-color-black);
+  padding-top: 1em;
+  order: 2;
+  text-decoration: underline;
 }
 
 
 /* ******************************** */
-/* Main - Shop Instagram            */
+/* Main - 3 - Media queries         */
 /* ******************************** */
 
-main section:nth-of-type(4) h1 {
-  margin-top: 3em;
+@media (min-width: 64em) {
+   main .home-spiegeltrucs {
+    padding: 2em 0 2em 1em;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows:4em 7em 15em;
+  }
+
+   main .home-spiegeltrucs h1 {
+		grid-column-start:1;
+		grid-row-start:1;
+    
+	}
+	
+	 main .home-spiegeltrucs p {
+		grid-column-start:1;
+		grid-row-start:2;
+    padding-right: 2em;
+	}
+
+   main .home-spiegeltrucs a {
+		grid-column-start:1;
+		grid-row-start:3;
+	}
+	
+	 main .home-spiegeltrucs img {
+		grid-column-start:2;
+		grid-row-start:1;
+		grid-row-end:3;
+    padding-left: 2em;
+    width: 90em;
+    height: auto;
+    justify-self: end;
+	}
 }
 
-main section:nth-of-type(4) ul {
+@media (min-width: 84em) {
+   main .home-spiegeltrucs {
+    grid-template-rows:4em 7em 20em;
+  }
+}
+
+@media (min-width: 95em) {
+   main .home-spiegeltrucs {
+    grid-template-rows:4em 7em 22em;
+  }
+}
+
+@media (min-width: 100em) {
+   main .home-spiegeltrucs {
+    grid-template-rows:4em 7em 24em;
+  }
+}
+
+@media (min-width: 105em) {
+   main .home-spiegeltrucs {
+    grid-template-rows:4em 7em 26em;
+  }
+}
+
+@media (min-width: 110em) {
+   main .home-spiegeltrucs {
+    grid-template-rows:4em 7em 30em;
+  }
+}
+
+@media (min-width: 115em) {
+   main .home-spiegeltrucs {
+    grid-template-rows:4em 7em 32em;
+  }
+}
+
+@media (min-width: 120em) {
+   main .home-spiegeltrucs {
+    grid-template-rows:4em 7em 34em;
+  }
+}
+
+
+/* ******************************** */
+/* Main - 4 - Shop Instagram        */
+/* ******************************** */
+
+ main .home-shopinstagram {
+  padding: 2em 1em 2em 1em;
+}
+
+ main .home-shopinstagram ul {
   display:flex;
   overflow-x:auto;
   gap: 0.5em;
-  width: 100%;
-  padding: 1em;
-  list-style-type: none;
+  padding: 0;
+  padding-top: 1em;
 }
 
-main section:nth-of-type(4) ul img {
-  width: 11em;
+ main .home-shopinstagram ul img {
+  width: 14em;
 }
 
-main section:nth-of-type(4) > a {
-  color: var(--black);
+ main .home-shopinstagram a {
+  display: block;
+  color: var(--text-color-black);
+  padding-top: 1em;
+  font-size: 14px;
+  text-decoration: underline;
 }
 
-main section:nth-of-type(4) ul li div {
+ main .home-shopinstagram ul li {
   display: grid;
-  grid-template-rows: 15% 55px auto;
+  grid-template-rows: 15% 1em auto;
 }
 
-main section:nth-of-type(4) p {
-  line-height: 20px;
-  font-size: 15px;
+ main .home-shopinstagram ul li a {
+  text-decoration: none;
+}
+
+ main .home-shopinstagram p {
   font-weight: 100;
+  padding-top: 1em;
+}
+
+ main .home-shopinstagram ul li a p {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  color: var(--main-shop-instagram-color);
+}
+
+
+/* ******************************** */
+/* Main - 4 - Media queries         */
+/* ******************************** */
+
+@media (min-width:60em) {
+   main .home-shopinstagram ul {
+    gap: 0.7em;
+  }
+
+   main section:nth-of-type(2) ul img {
+    width: 16em;
+    gap: 0.8em;
+  }
+}
+
+@media (min-width:70em) {
+   main .home-shopinstagram ul {
+    gap: 0.9em;
+  }
+   main .home-shopinstagram ul img {
+    width: 20em;
+  }
+}
+
+@media (min-width:80em) {
+   main .home-shopinstagram ul {
+    gap: 1.1em;
+  }
+   main .home-shopinstagram ul img {
+    width: 22em;
+  }
+}
+
+@media (min-width:90em) {
+   main .home-shopinstagram ul {
+    gap: 1.3em;
+  }
+   main .home-shopinstagram ul img {
+    width: 24em;
+  }
+}
+
+@media (min-width:64em) {
+   main .home-shopinstagram div {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 3em 55%;
+  }
+
+   main .home-shopinstagram div h1 {
+    order: -1;
+    grid-column-start:1;
+		grid-row-start:1;
+  }
+
+   main .home-shopinstagram div p {
+    order: 0;
+    grid-column-start:1;
+		grid-row-start:2;
+  }
+
+   main .home-shopinstagram div a {
+    order: 1;
+    grid-column-start:2;
+		grid-row-start:1;
+    align-self: end;
+    justify-self: end;
+  }
+}
+
+
+/* ******************************** */
+/* Main - 5 - Shop per ruimte       */
+/* ******************************** */
+
+ main .home-shopperruimte {
+  padding: 2em 0 2em 0;
+}
+
+ main .home-shopperruimte h1 {
+  padding-left: 0.5em;
+}
+
+ main .home-shopperruimte ul {
+  display:flex;
+  overflow-x:auto;
+  padding: 0;
+  padding-top: 1em;
+}
+
+ main .home-shopperruimte ul img {
+  width: 100%;
+}
+
+
+ main .home-shopperruimte a {
+  color: var(--text-color-white);
+  position: relative;
+  display: block;
+}
+
+ main .home-shopperruimte p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-left: 1em;
+  padding-bottom: 0.3em;
+  z-index: 100;
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+
+/* ******************************** */
+/* Main - 5 - Media queries         */
+/* ******************************** */
+
+@media (max-width: 43em) {
+	 main .home-shopperruimte ul img {
+    width: 14em;
+  }
+}
+
+@media (min-width: 150em) {
+	 main .home-shopperruimte ul {
+    max-width: 100%;
+    justify-content: space-between;  
+  }
+}
+
+
+/* ******************************** */
+/* Main - 6 - Handige tips          */
+/* ******************************** */
+
+ main .home-handigetips {
+  padding: 2em 1em 2em 1em;
+}
+
+ main .home-handigetips h1 {
+  text-align: center;
+  padding: 0 1em 0 1em;
+}
+
+ main .home-handigetips ul {
+  display:flex;
+  overflow-x:auto;
+  width: 100%;
+  gap: 0.5em;
+  padding: 0;
+  padding-top: 1em;
+}
+
+ main .home-handigetips ul img {
+  width: 14em;
+}
+
+ main .home-handigetips ul a {
+  color: var(--text-color-black);
+  font-weight: 100;
+  line-height: 22px;
+}
+
+
+/* ******************************** */
+/* Main - 6 - Media queries         */
+/* ******************************** */
+
+@media (min-width:60em) {
+   main .home-handigetips ul {
+    gap: 0.7em;
+  }
+
+   main .home-handigetips ul img {
+    width: 16em;
+    gap: 0.8em;
+  }
+}
+
+@media (min-width:70em) {
+   main .home-handigetips ul {
+    gap: 0.9em;
+  }
+   main .home-handigetips ul img {
+    width: 20em;
+  }
+}
+
+@media (min-width:80em) {
+   main .home-handigetips ul {
+    gap: 1.1em;
+  }
+   main .home-handigetips ul img {
+    width: 22em;
+  }
+}
+
+@media (min-width:90em) {
+   main .home-handigetips ul {
+    gap: 1.3em;
+  }
+   main .home-handigetips ul img {
+    width: 24em;
+  }
+}
+
+
+/* ******************************** */
+/* Main - 7 - Inschrijven           */
+/* ******************************** */
+
+ main .inschrijven {
+  padding: 2em 1em 2em 1em;
+  background-color: var(--main-background-color-inschrijven);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+ main .inschrijven h1 {
+  padding-bottom: 3em;
+  font-weight: bold;
+  font-family: 'PT serif', Georgia, 'Times New Roman', Times, serif;
+}
+
+ main .inschrijven form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: none;
+  height: 2.5em;
+  margin: 0 1em 1em 1em;
+}
+
+ main .inschrijven input {
+  padding: 1em 6em 1em 6em;
+  border: solid;
+  border-width: 0.2em;
+  font-size: 14px;
+  background-color: var(--main-background-color-inschrijven);
+  text-align: center;
+}
+
+ main .inschrijven button {
+  text-align: center;
+  color: var(--text-color-white);
+  text-transform: uppercase;
+  padding: 1em 2em 1em 2em;
+  background-color: var(--main-background-color-button);
+  border: none;
+  margin: 2em 0 2em 0;
+}
+
+ main .inschrijven p {
+  padding-top: 2em;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+
+/* ******************************** */
+/* Main - 7 - Media queries         */
+/* ******************************** */
+
+@media (min-width: 72em) {
+   main .inschrijven {
+    display: grid;
+    padding: 1.5em 3em 1.5em 3em;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 4em 8em;
+    text-align: start;
+  }
+
+   main .inschrijven h1 {
+    grid-column-start:1;
+		grid-row-start:1;
+  }
+
+   main .inschrijven p {
+    grid-column-start:1;
+		grid-row-start:2;
+  }
+
+   main .inschrijven form {
+    display: flex;
+    flex-direction: row;
+    grid-column-start:2;
+		grid-row-start:2;
+    justify-self: end;
+  }
+
+   main .inschrijven form input {
+    padding: 1em 17em 1em 17em;
+  }
+
+   main .inschrijven form button {
+    margin-left: 2em;
+  }
+}
+
+@media (max-width: 130em) {
+   main .inschrijven form input {
+    padding: 1em 12em 1em 12em;
+  }
+}
+
+@media (max-width: 95em) {
+   main .inschrijven form input {
+    padding: 1em 6em 1em 6em;
+  }
+}
+
+
+/* ******************************** */
+/* Footer                           */
+/* ******************************** */
+
+footer {
+	display:grid;
+}
+
+footer ul {
+	margin:0;
+	padding:0;
+	max-height:0;
+	overflow:hidden;
+	transition:.4s;
+}
+
+footer section.menuOpen ul {
+	max-height:42em;
+}
+
+footer button {
+  background-color: var(--footer-background-color);
+  width: 100%;
+  border-bottom: solid;
+  border-width: 0 0 0.1em;
+  color: var(--footer-border-color);
+  padding: 1em 0 1em 2em;
+}
+
+footer section h1 {
+  color: var(--text-color-black);
+  font-weight: 100;
+  font-size: 16px;
+  text-align: left;
+}
+
+footer ul li {
+	background-color: var(--footer-background-color);
+  border-bottom: solid;
+  border-width: 0.1em;
+  color: var(--footer-border-color);
+  padding: 1em 1em 1em 2.5em;
+}
+
+footer ul li a {
+  color: var(--text-color-black);
+}
+
+
+/* ******************************** */
+/* Footer - Media queries           */
+/* ******************************** */
+
+@media (min-width:73em) {
+	footer {
+		grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    background-color: var(--footer-background-color);
+	}
+
+  footer button {
+    background-color: var(--footer-background-color);
+    padding: 1em 0 1em 1em;
+    border: none;
+  }
+	
+	footer ul {
+		max-height:42em;
+	}
+
+  footer ul li {
+    border-width: 0;
+    background-color: var(--footer-background-color);
+    padding: 1em 1em 1em 1em;
+    font-size: 14px;
+  }
+
+  footer section h1 {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+  }
 }
 
 
 
+
 /* ******************************** */
-/* Main - Handige tips              */
+/* Tweede pagina - ...  */
 /* ******************************** */
+
+#handige-tips main .intro {
+  padding: 0 1em;
+  text-align: center;
+}
+
+#handige-tips main .intro h1 {
+  font-family: 'PT serif', Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 2.8em;
+}
+
+#handige-tips main .intro p {
+  font-size: 1.1em;
+}
+
+#handige-tips main .images {
+  display: flex;
+  flex-direction: column;
+  gap:1em;
+  width: 100%;
+}
+
+#handige-tips main .text h2 {
+  padding-top: 1em;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+#handige-tips .text p {
+  font-size: 0.8em;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+#handige-tips main p,
+.inro h1, 
+.text h2 {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width:55em) {
+  #handige-tips main p,
+  .intro h1, 
+  .text h2 {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  #handige-tips main .images {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #handige-tips main .images img {
+    width: 50%;
+  }
+
+  #handige-tips main .carousel p {
+    padding: 0;
+  } 
+
+  #handige-tips main .inschrijven p {
+    padding: 0;
+  } 
+}
