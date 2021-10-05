@@ -195,11 +195,11 @@ header section:nth-of-type(2) > div:last-of-type::before {
 /* ******************************** */
 /* Header - Navigatie               */
 /* ******************************** */
-nav {
+header nav {
   order:-1;  
 }
 
-nav button {
+header nav button {
   width:5em;
   height:2.5em;
   appearance:none;
@@ -210,7 +210,7 @@ nav button {
   z-index:100;
 }
 
-nav button::before {
+header nav button::before {
   content:"\2630 ";
   display:inline-flex;
   font-size: 2.5em;
@@ -221,11 +221,11 @@ nav button::before {
   transform:scale(.75);
 }
 
-nav.toonMenu  button::before {
+header nav.toonMenu  button::before {
   content:"\2573";
 }
 
-nav ul { 
+header nav ul { 
   margin:0; 
   padding:8em 0;
   background: var(--menu-background-color);
@@ -237,11 +237,11 @@ nav ul {
   z-index:50;
 }
 
-nav.toonMenu ul {
+header nav.toonMenu ul {
   transform:translatex(0);
 }
 
-nav a {
+header nav a {
   display:flex;
   align-items:center;
   gap:.25em;
@@ -249,12 +249,12 @@ nav a {
   border-bottom:solid 0.1em var(--border-color);
 }
 
-nav a img {
+header nav a img {
   width:auto;
   height:2em;
 }
 
-nav a.active {
+header nav a.active {
   font-weight:bold;
 }
 
@@ -291,18 +291,18 @@ header form input {
 /* ******************************** */
 
 @media (min-width:70em) {
-  nav {
+  header nav {
     /* jouw code hier */
     justify-self:center;
     order:0;
   }
   
-  nav button {
+  header nav button {
     /* jouw code hier */
     display:none;
   }
   
-  nav ul {
+  header nav ul {
     /* jouw code hier */
     position:static;
     transform:none;
@@ -314,7 +314,7 @@ header form input {
     display:flex;
   }
   
-  nav a {
+  header nav a {
     /* jouw code hier */
     border:none;
   }
