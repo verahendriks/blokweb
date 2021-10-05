@@ -156,8 +156,8 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 #### Screen reader
 De screen reader leest het redelijk goed voor alleen kan ik bij sommige afbeeldingen nog een alt toevoegen, zodat het duidelijk is wat is er te zien is op de afbeelding.
 
-<img src="images/readme/code-css-alt.jpg" width="600px" alt="tekst over afbeelding">
-<img src="images/readme/code-css-alt-homepagina.jpg" width="600px" alt="html en css tekst over afbeelding">
+<img src="images/readme/code-css-alt.jpg" width="800px" alt="tekst over afbeelding">
+<img src="images/readme/code-css-alt-homepagina.jpg" width="800px" alt="html en css tekst over afbeelding">
 
 
 #### Brillen 
