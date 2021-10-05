@@ -35,9 +35,7 @@ li {
   /* HeaderColors */
   --header-background-color-stijladvies: #545d63;
   --header-background-color-form: #f5f6f4;
-
-  /* MobileMenuColors */
-  --mobile-menu-background-color: #ffffff;
+  --menu-background-color: #ffffff;
 
   /* TextColors */
   --text-color-white: #ffffff;
@@ -47,9 +45,9 @@ li {
   --main-shop-instagram-color: #9b9b9b;
   --main-background-color-inschrijven: #efeee5;
   --main-background-color-button: #000000;
+  --border-color: #dadada;
 
   /* FooterColors */
-  --footer-border-color: #dadada;
   --footer-background-color: #f8f8f8;
 }
 
@@ -130,7 +128,7 @@ header section:first-of-type p {
 
 header section:nth-of-type(2) {
   padding:1em;
-  background-color:white;
+  background-color: var(--menu-background-color);
   display:grid;
   grid-template-columns:min-content 1fr 1fr min-content;  
   align-items:center;
@@ -174,7 +172,6 @@ header section:nth-of-type(2) > a:first-of-type img {
 header section:nth-of-type(2) > div:last-of-type {
   width:5em;
   height:2.5em;
-  background-color:var(--button-background-color);
   border-radius:.25em;
   line-height:2.5em;
   text-align:center;
@@ -206,7 +203,7 @@ nav button {
   width:5em;
   height:2.5em;
   appearance:none;
-  background-color:var(--button-background-color);
+  background-color:var(--menu-background-color);
   border:none;
   border-radius:.25em;
   position:relative;
@@ -231,7 +228,7 @@ nav.toonMenu  button::before {
 nav ul { 
   margin:0; 
   padding:8em 0;
-  background:white;
+  background: var(--menu-background-color);
   list-style:none;
   position:fixed;
   left:0; right:0; top:0; bottom:0;
@@ -249,7 +246,7 @@ nav a {
   align-items:center;
   gap:.25em;
   padding:1em 1.9em;
-  border-bottom:solid 0.1em var(--footer-border-color);
+  border-bottom:solid 0.1em var(--border-color);
 }
 
 nav a img {
@@ -463,7 +460,7 @@ header form input {
 
  main .carousel p {
   font-weight: 500;
-  color: #000000;
+  color: var(--text-color-black);
 }
 
  main .carousel p:nth-of-type(2) {
@@ -541,7 +538,7 @@ header form input {
 
  main .home-spiegeltrucs a {
   display: block;
-  font-size: 14px;
+  font-size: 0.9em;
   color: var(--text-color-black);
   padding-top: 1em;
   order: 2;
@@ -656,7 +653,7 @@ header form input {
   display: block;
   color: var(--text-color-black);
   padding-top: 1em;
-  font-size: 14px;
+  font-size: 0.9em;
   text-decoration: underline;
 }
 
@@ -677,7 +674,7 @@ header form input {
  main .home-shopinstagram ul li a p {
   padding: 0;
   margin: 0;
-  font-size: 12px;
+  font-size: 0.8em;
   color: var(--main-shop-instagram-color);
 }
 
@@ -793,7 +790,7 @@ header form input {
   z-index: 100;
   text-align: left;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.1em;
 }
 
 
@@ -844,7 +841,7 @@ header form input {
  main .home-handigetips ul a {
   color: var(--text-color-black);
   font-weight: 100;
-  line-height: 22px;
+  line-height: 1.4em;
 }
 
 
@@ -924,7 +921,7 @@ header form input {
   padding: 1em 6em 1em 6em;
   border: solid;
   border-width: 0.2em;
-  font-size: 14px;
+  font-size: 0.9em;
   background-color: var(--main-background-color-inschrijven);
   text-align: center;
 }
@@ -941,8 +938,8 @@ header form input {
 
  main .inschrijven p {
   padding-top: 2em;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 0.9em;
+  line-height: 1.4em;
 }
 
 
@@ -1024,14 +1021,14 @@ footer button {
   width: 100%;
   border-bottom: solid;
   border-width: 0 0 0.1em;
-  color: var(--footer-border-color);
+  color: var(--border-color);
   padding: 1em 0 1em 2em;
 }
 
 footer section h1 {
   color: var(--text-color-black);
   font-weight: 100;
-  font-size: 16px;
+  font-size: 1em;
   text-align: left;
 }
 
@@ -1039,7 +1036,7 @@ footer ul li {
 	background-color: var(--footer-background-color);
   border-bottom: solid;
   border-width: 0.1em;
-  color: var(--footer-border-color);
+  color: var(--border-color);
   padding: 1em 1em 1em 2.5em;
 }
 
@@ -1072,11 +1069,11 @@ footer ul li a {
     border-width: 0;
     background-color: var(--footer-background-color);
     padding: 1em 1em 1em 1em;
-    font-size: 14px;
+    font-size: 0.9em;
   }
 
   footer section h1 {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 500;
     text-align: left;
   }
@@ -1085,8 +1082,9 @@ footer ul li a {
 
 
 
+
 /* ******************************** */
-/* Tweede pagina - ...  */
+/* Tweede pagina - handige tips     */
 /* ******************************** */
 
 #handige-tips main .intro {
@@ -1129,6 +1127,11 @@ footer ul li a {
   padding-left: 1em;
   padding-right: 1em;
 }
+
+
+/* ******************************** */
+/* Tweede pagina - Media queries    */
+/* ******************************** */
 
 @media (min-width:55em) {
   #handige-tips main p,

@@ -1,5 +1,6 @@
 // // JavaScript Document
 
+// Responsive menu - footer
 var eersteButtonFooter = document.querySelector("footer section:nth-of-type(1) button");
 var tweedeButtonFooter = document.querySelector("footer section:nth-of-type(2) button");
 var derdeButtonFooter = document.querySelector("footer section:nth-of-type(3) button");
@@ -38,6 +39,8 @@ function toggleFooterVijfdeMenuFooter() {
 	vijfdeSection.classList.toggle("menuOpen");
 }
 
+
+// Responsive menu - header - klikbaar
 var deButton = document.querySelector("nav button");
 
 deButton.addEventListener("click", toggleMenu);
