@@ -232,7 +232,7 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 Screenshot(s) van je eindresultaat (links van Made, rechts van mij)
 
 <img src="images/readme/homepagina-made.jpg" width="300px" alt="homepagina van made">
-<img src="images/readme/homepagina-made-vera.jpg" width="300px" alt="homepagina van made door mij">
+<img src="images/readme/homepagina-made-vera.jpg" width="400px" alt="homepagina van made door mij">
 
 </details>
 
@@ -245,10 +245,8 @@ Screenshot(s) van je eindresultaat (links van Made, rechts van mij)
 <details open>
 <summary>continu bijhouden terwijl je werkt</summary>
 
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
-1. bron 1
-2. bron 2
+1. Veel hulp van student-assistenten, docent en andere studenten.
+2. 
 3. ...
 
 </details>
